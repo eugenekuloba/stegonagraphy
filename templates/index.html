@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Steganography - Encode/Decode messages in images</title>
+</head>
+<body>
+	<h1>Steganography - Encode/Decode messages in images</h1>
+	<form action="/encode" method="POST" enctype="multipart/form-data">
+		<input type="file" name="image" accept="image/*" required><br>
+		<textarea name="message" rows="4" cols="50" placeholder="Enter message to encode" required></textarea><br>
+		<input type="submit" value="Encode">
+	</form>
+	<form action="/decode" method="POST" enctype="multipart/form-data">
+		<input type="file"
